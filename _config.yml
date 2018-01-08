@@ -36,7 +36,7 @@ mathjax: true
 sass:
   sass_dir: _sass
   style: compressed
-disqus_shortname: default
+disqus_shortname: guendeli-github-io
 analytics-id: default
 twitter: HomerDalords
 facebook: profile.php?id=1038120657

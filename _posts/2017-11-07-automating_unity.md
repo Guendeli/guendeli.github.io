@@ -4,7 +4,8 @@ date: 2017-11-07 00:00:00 Z
 tags:
 - Unity3D,
 - gamedev
-description: 
+description:
+layout: post 
 image: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1443735529Fotolia_91388525_Subscription_Monthly_M-1024x768.jpg
 ---
 
