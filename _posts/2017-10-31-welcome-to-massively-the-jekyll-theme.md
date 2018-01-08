@@ -1,8 +1,10 @@
 ---
 title: Automating Unity3D Assets Import
-published: true
+date: 2017-10-31 00:00:00 Z
+tags:
+- Unity3D,
+- gamedev
 description: 
-tags: Unity3D, gamedev
 cover_image: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1443735529Fotolia_91388525_Subscription_Monthly_M-1024x768.jpg
 ---
 
