@@ -1,6 +1,2 @@
-*.gem
-.bundle
-.sass-cache
-Gemfile.lock
 _site
-material-theme.gemspec
+_site/
