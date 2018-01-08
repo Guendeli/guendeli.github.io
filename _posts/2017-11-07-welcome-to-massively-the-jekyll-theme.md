@@ -5,13 +5,9 @@ tags:
 - Unity3D,
 - gamedev
 description: 
-<<<<<<< HEAD:_posts/2017-10-31-welcome-to-massively-the-jekyll-theme.md
 tags: Unity3D, gamedev
 date: 2017-11-07
 image: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1443735529Fotolia_91388525_Subscription_Monthly_M-1024x768.jpg
-=======
-cover_image: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1443735529Fotolia_91388525_Subscription_Monthly_M-1024x768.jpg
->>>>>>> aad78505d4b2ccd854a986d0a5cdfa79e27c2066:_posts/2017-11-07-welcome-to-massively-the-jekyll-theme.md
 ---
 
 Games aren't always made by a one-man-team but involve several developers, who are people akin to making mistakes,that in turn increase dev cost time. 
