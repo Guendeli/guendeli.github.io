@@ -1,29 +1,56 @@
 ---
-title: 'Welcome to Massively: The Jekyll Theme!'
-date: 2017-10-31 00:00:00 Z
-layout: post
-excerpt: Huge thanks to HTML5 UP for making this awesome template! Let's see what
-  it can do
-image: "/images/pic02.jpg"
+title: Automating Unity3D Assets Import
+published: true
+description: 
+tags: Unity3D, gamedev
+cover_image: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1443735529Fotolia_91388525_Subscription_Monthly_M-1024x768.jpg
 ---
 
-## How to Use This Theme
-Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
+Games aren't always made by a one-man-team but involve several developers, who are people akin to making mistakes,that in turn increase dev cost time. 
+Importing assets is no joke, with the default settings and different rules for different parts of your project, let's start with this premise and ask ourselves: "can we write tools to prevent common, costly mistakes ?"
 
-Download this repository [here](https://github.com/iwiedenm/jekyll-theme-massively) and save it to any folder you want.
+the answer is yes and let's discover one cool Unity3D Class.
 
-Open a terminal window or a command line and ```cd``` to that location.
 
-Then enter: ```bundle exec jekyll serve```. You can now access your new Jekyll site from [http://127.0.0.1:4000/](http://127.0.0.1:4000/). Have fun exploring your new site!
+**AssetPostprocessor:**
 
-## Features
-### Auto-Generating Sitemap
-The sitemap is auto generated! Just simply change the front matter of each site. It looks like so...
+the AssetPostProcessor class receive callbacks on importing something. it implements OnPreProcess* and OnPostProcess* methods and apply your rules to the assetImporter instance.
+therefore we can write rules that prevent some common mistakes, let's take textures for instance, we can ensure:
+- setting the texture type (deault, sprite, etc..)
+- making sure Read/Write is disabled.
+- disabling mipmaps for anything that is 2D or UI (it is enabled by default).
+- forcing a max texture size
+
+```C#
+public class AssetImportSample : AssetPostprocessor {
+
+    void OnPreprocessTexture()
+    {
+        if (assetPath.Contains("_UI") || assetPath.Contains("_Sprite"))
+        {
+            TextureImporter textureImporter = (TextureImporter)assetImporter;
+            textureImporter.textureType = TextureImporterType.Sprite;
+            textureImporter.spriteImportMode = SpriteImportMode.Multiple;
+            textureImporter.mipmapEnabled = false; // we don't need mipmaps for 2D/UI Atlases
+
+            if (textureImporter.isReadable)
+            {
+                textureImporter.isReadable = false; // make sure Read/Write is disabled
+            }
+            textureImporter.maxTextureSize = 1024; // force a max texture size
+            Debug.Log("UI/Sprite Audit Complete");
+        }
+    }
+}
+
 ```
-sitemap:
-    priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
-```
-### Formspring integration
-The contact form below each page on the footer actually collects information! Just change your email address in the ```_config.yml``` file!
+Now with the above script, is it easier for the team to comply to naming conventions rather than cherrypick settings for different parts of a project.
+
+we can also implement the same OnPreprocessModel() method for meshes to audit some common errors:
+
+• Make sure Read/Write is disabled
+• Disabling rig on non-character models (it fixes the auto added Animator component)
+• Copy avatars for characters with shared rigs
+• Enable mesh compression
+
+and of course, also applies for Audio.
