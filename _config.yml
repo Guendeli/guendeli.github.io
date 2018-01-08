@@ -1,7 +1,7 @@
 # Site
 title:  "Guendeli Omar"
 bio:  "A Virtual Reality / Gameplay Programmer"
-description:  "Creative in gameplay / tools programming, my goal is to find the "fun" value in your game as well as producing tools to speed up Level/Game designer's workflow."
+description:  "Creative in gameplay / tools programming, my goal is to find the fun value in your game as well as producing tools to speed up Level/Game designer's workflow."
 locale: en_US
 baseurl:  "" # the subpath of your site, e.g. /blog
 url:  "" # the base hostname & protocol for your site
