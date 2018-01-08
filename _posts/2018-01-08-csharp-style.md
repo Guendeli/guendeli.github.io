@@ -5,8 +5,6 @@ layout: post
 image: https://media.licdn.com/media/AAEAAQAAAAAAAArVAAAAJDY2MWRmZTc2LTM3NmUtNDcwOC1hM2FjLTM3YmQ2MWJkOTk4Zg.jpg
 ---
 
-## Views on Unity3D C# Style.
-
 Style and naming conventions might vary between every team / company / individual out there and Unity3D's API use a strange naming convention. So i had to modify mine at most gigs i took to make the code match theirs.
 
 What follows is my own view, this is not to be taken for granted and please, feel free to give more feedback in the comments section.
