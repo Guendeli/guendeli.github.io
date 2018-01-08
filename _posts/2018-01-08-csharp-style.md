@@ -1,8 +1,8 @@
 ---
+title: Views on Unity C#
+date: 2018-01-08 23:31:01 Z
 layout: post
-title:  Views on Unity C#
-date:   2018-01-08 17:31:01 -0600
-image: "https://media.licdn.com/media/AAEAAQAAAAAAAArVAAAAJDY2MWRmZTc2LTM3NmUtNDcwOC1hM2FjLTM3YmQ2MWJkOTk4Zg.jpg"
+image: https://media.licdn.com/media/AAEAAQAAAAAAAArVAAAAJDY2MWRmZTc2LTM3NmUtNDcwOC1hM2FjLTM3YmQ2MWJkOTk4Zg.jpg
 ---
 
 ## Views on Unity3D C# Style.
