@@ -5,8 +5,6 @@ tags:
 - Unity3D,
 - gamedev
 description: 
-tags: Unity3D, gamedev
-date: 2017-11-07
 image: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/10/1443735529Fotolia_91388525_Subscription_Monthly_M-1024x768.jpg
 ---
 
