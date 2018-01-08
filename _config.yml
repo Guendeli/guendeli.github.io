@@ -35,15 +35,15 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+twitter:            HomerDalords
+facebook:           profile.php?id=1038120657
+instagram:          homer.dalor
+github:             Guendeli
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           Casablanca, Morocco
+phone:              +212663098801
+email:              guendeliomar@gmail.com
 
 # Gems
 gems:
