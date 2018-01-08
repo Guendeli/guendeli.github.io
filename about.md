@@ -17,13 +17,12 @@ Omar Guendeli here, former medical intern and Senior Gameplay programmer with 6 
 
 With a very keen eye for best practices enforcement, automating assets pipelines and optimization/performance benchmark. I ensure good communication with game/level designers and artists and thus a smooth and hassle-free production pipeline.
 
-### Content is Imortant
-<div class="box">
-  <p>
-  In saying that, a one-measure fits-all approach won't do the trick with regards to content promoting. Rather, an emphasis on making remarkable, high caliber and totally genuine content that is engaging, helpful and fascinating for customers will get you the crown. From content, video and symbolism to infographics, studies, online courses and podcasts, whatever your favored content medium is, guarantee it is shareable and pertinent to your industry.
-  </p>
-</div>
+### Additional Contacts
+I'm present in many other social media networks you can use to contact me:
+- [Linkdin](https://www.linkedin.com/in/omar-guendeli-70a57862/)
+- [Dev.to, the practical dev](https://dev.to/homerdalords)
+- [Github](https://github.com/Guendeli)
 
 <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
 
-On social media, we may share our own thoughts and advance our image notwithstanding spreading musings for different associations and affiliations. With such a critical number of associations with people and relationship on social media, our experience can be over-burden with a considerable measure of information.
+While i can't guarantee being available for contract work at the moment, feel free to contact me by any means through social media networks.
