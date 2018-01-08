@@ -1,11 +1,13 @@
-# Site
-title:  "Guendeli Omar"
-bio:  "A Virtual Reality / Gameplay Programmer"
-description:  "Creative in gameplay / tools programming, my goal is to find the fun value in your game as well as producing tools to speed up Level/Game designer's workflow."
-locale: en_US
-baseurl:  "" # the subpath of your site, e.g. /blog
-url:  "" # the base hostname & protocol for your site
-
+---
+title: Guendeli Omar
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
 - scope:
     path: ''
@@ -13,51 +15,57 @@ defaults:
   values:
     permalink: "/blog/:title/"
     layout: post
-    author:
-
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
+    author: 
+bio: A Virtual Reality / Gameplay Programmer
+description: Creative in gameplay / tools programming, my goal is to find the fun
+  value in your game as well as producing tools to speed up Level/Game designer's
+  workflow.
+locale: en_US
+baseurl: ''
+url: ''
+permalink: "/blog/:title/"
+markdown: kramdown
+highlighter: rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
 sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Comments
-disqus_shortname:   default
-
-# Social
-analytics-id:       "default"
-twitter:            HomerDalords
-facebook:           profile.php?id=1038120657
-instagram:          homer.dalor
-github:             Guendeli
-
-# personal
-location:           Casablanca, Morocco
-phone:              +212663098801
-email:              guendeliomar@gmail.com
-
-# Gems
+  sass_dir: _sass
+  style: compressed
+disqus_shortname: default
+analytics-id: default
+twitter: HomerDalords
+facebook: profile.php?id=1038120657
+instagram: homer.dalor
+github: Guendeli
+location: Casablanca, Morocco
+phone: 212663098801
+email: guendeliomar@gmail.com
 gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
+- jekyll-mentions
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-gist
+- jekyll-paginate
 paginate: 6
 paginate_path: "/blog/page:num/"
-
 jekyll-mentions:
-    base_url: https://github.com/Guendeli
-
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+  base_url: https://github.com/Guendeli
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- node_modules
+- gulpfile.js
+- package.json
+- _site
+- src
+- vendor
+- CNAME
+- LICENSE
+- Rakefile
+- old
