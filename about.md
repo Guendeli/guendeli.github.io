@@ -19,9 +19,10 @@ With a very keen eye for best practices enforcement, automating assets pipelines
 ### Additional Contacts
 I'm present in many other social media networks you can use to contact me:
 - [Linkdin](https://www.linkedin.com/in/omar-guendeli-70a57862/)
-- [Dev.to, the practical dev](https://dev.to/homerdalords)
+- [Stack Exchange](https://gamedev.stackexchange.com/users/99697/omar-guendeli)
 - [Github](https://github.com/Guendeli)
-
+- [Unity Connect](https://connect.unity.com/u/5882bf51090915001a251b88)
+   
 <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
 
 While i can't guarantee being available for contract work at the moment, feel free to contact me by any means through social media networks.
