@@ -25,4 +25,4 @@ I'm present in many other social media networks you can use to contact me:
    
 <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
 
-While i can't guarantee being available for contract work at the moment, feel free to contact me by any means through social media networks.
+For any quote or business inquiries, feel free to contact me by any means through social media networks.
