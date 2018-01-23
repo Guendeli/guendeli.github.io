@@ -45,11 +45,11 @@ Vector3 SampleCurve(Vector3 start, Vector3 end, Vector3 control, float t) {
 
 ## **Blink Teleport**
 This method was the first to be adopted as a motion sickness-free viable method of locomotion in most early VR experiences,
-with a variable in time fading or immediate. by either pointing to static teleport points or -what we are using- the Arc teleporter.
+either with a fading in/out or immediate. by either pointing to static teleport points or -what we are using- the Arc teleporter.
 
-**_Sidenote/History:_** In VR, the developer gives full control of the camera to the player's...neck, that is a part of the deal. But for the sake of **[accessibility](http://gameaccessibilityguidelines.com/)**, some way to support seated vr play was necessary. Oculus started to ask for a "snap rotation" using the joysticks as a best practice for their games and thus is became common nowadays. That bring us to our issue: mobile VR controllers only have a trigger and a touchpad.
+**_Sidenote/History:_** In VR, the developer gives full control of the camera to the player's...neck, that is part of the deal. But for the sake of **[accessibility](http://gameaccessibilityguidelines.com/)**, some way to support seated vr play was necessary. Oculus started to ask for a "snap rotation" using the joysticks as a best practice for their games and thus it became common nowadays. That bring us to our issue: mobile VR controllers only have a trigger and a touchpad.
 
-Microsoft's implemented this just right in their cliffhouse by letting the user calibrate it's facing rotation while teleporting. My modest implementation looks like:
+Microsoft's implemented this just right in their cliffhouse menu by letting the user calibrate it's facing rotation while teleporting. A modest implementation looks like:
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="3SthBls"><a href="//imgur.com/3SthBls">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
@@ -120,11 +120,11 @@ Vector3 TouchpadDirection {
 ```
 
 ## **Dash Teleport:**
-Very cool for action fast paced games/experiences, the dash gives the user a sense of power and was well designed in DOOM VR (as well as the flat screen Doom game), but if improperly implemented can induce a lot of motion sickness.
-The culprit here is the *[Field of View](https://en.wikipedia.org/wiki/Field_of_view)*, while it can be pretty wide if you're in your couch watching TV, it get reduced if you're walking, running or focusing on a precise task in front of you.
+Very cool for action fast paced games/experiences, the dash gives the user a sense of power and was well designed in DOOM VR (as well as the flat screen Doom game btw), but if improperly implemented can induce sickness.
+The culprit here is the *[Field of View](https://en.wikipedia.org/wiki/Field_of_view)*, while it can be pretty wide if you're in your couch watching TV, it get reduced if you're walking, running or focusing on a task in front of you.
 that bring us to the *tunneling effect*.
 
-![altText](https://i.imgur.com/u9h5xWY.mp4)
+<blockquote class="imgur-embed-pub" lang="en" data-id="u9h5xWY"><a href="//imgur.com/u9h5xWY">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Implementation makes use of a mask attached to a Quad/Plane/UIPanel child of our main camera. then by tweaking the alpha or the scale it creates a cool vignette effect that reduces the FOV while moving. a sample of a mask can be created in 3 clicks in photoshop and looks like:
 
