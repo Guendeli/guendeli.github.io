@@ -23,7 +23,7 @@ but first, let's tackle a boring part about curves.
 A Quadratic Bézier curve would be the easiest way to implement an arc teleporter, the other being a parabolic curve.
 It consists of three points: start/end points and a control point. And two line segments: a first one 'S0' between the start and control point, and a second 'S1' between the control and the end points.
 
-![altText](https://scontent.fmad3-7.fna.fbcdn.net/v/t39.2365-6/22538524_149282942471278_1239887625913892864_n.png?oh=01dde82fe64e9c608c2d82751cfbf566&oe=5AF51B21)
+![altText](https://i.imgur.com/8MtqOGU.png)
 
 Two additional points, Q0 and Q1 will be obtained by interpolating along S0 and S1 by some value t with a range between 0 and 1. And another segment S2 will be created by connecting Q0 and Q1, then by interpolating along this segment, a point 'Q2' would be the result that creates our curve.
 
