@@ -23,11 +23,11 @@ but first, let's tackle a boring part about curves.
 A Quadratic Bézier curve would be the easiest way to implement an arc teleporter, the other being a parabolic curve.
 It consists of three points: start/end points and a control point. And two line segments: a first one 'S0' between the start and control point, and a second 'S1' between the control and the end points.
 
-[altText](https://scontent.fmad3-7.fna.fbcdn.net/v/t39.2365-6/22538524_149282942471278_1239887625913892864_n.png?oh=01dde82fe64e9c608c2d82751cfbf566&oe=5AF51B21)
+![altText](https://scontent.fmad3-7.fna.fbcdn.net/v/t39.2365-6/22538524_149282942471278_1239887625913892864_n.png?oh=01dde82fe64e9c608c2d82751cfbf566&oe=5AF51B21)
 
 Two additional points, Q0 and Q1 will be obtained by interpolating along S0 and S1 by some value t with a range between 0 and 1. And another segment S2 will be created by connecting Q0 and Q1, then by interpolating along this segment, a point 'Q2' would be the result that creates our curve.
 
-[altText](https://scontent.fmad3-7.fna.fbcdn.net/v/t39.2365-6/22879649_542336362777632_507106561005453312_n.gif?oh=5b6c3b1502c70f2a6a26ac8915ce68e3&oe=5AF2D279)
+![altText](https://scontent.fmad3-7.fna.fbcdn.net/v/t39.2365-6/22879649_542336362777632_507106561005453312_n.gif?oh=5b6c3b1502c70f2a6a26ac8915ce68e3&oe=5AF2D279)
 
 This can be expressed with this snippet:
 
@@ -51,7 +51,7 @@ with a variable in time fading or immediate. by either pointing to static telepo
 
 Microsoft's implemented this just right in their cliffhouse by letting the user calibrate it's facing rotation while teleporting. My modest implementation looks like:
 
-[altText](https://i.imgur.com/3SthBls.mp4)
+![altText](https://i.imgur.com/3SthBls.mp4)
 
 ```Java
 //......SOME CODE.......
@@ -124,11 +124,11 @@ Very cool for action fast paced games/experiences, the dash gives the user a sen
 The culprit here is the *[Field of View](https://en.wikipedia.org/wiki/Field_of_view)*, while it can be pretty wide if you're in your couch watching TV, it get reduced if you're walking, running or focusing on a precise task in front of you.
 that bring us to the *tunneling effect*.
 
-[altText](https://i.imgur.com/u9h5xWY.mp4)
+![altText](https://i.imgur.com/u9h5xWY.mp4)
 
 Implementation makes use of a mask attached to a Quad/Plane/UIPanel child of our main camera. then by tweaking the alpha or the scale it creates a cool vignette effect that reduces the FOV while moving. a sample of a mask can be created in 3 clicks in photoshop and looks like:
 
-[altText](https://i.imgur.com/fM3NHuu.png)
+![altText](https://i.imgur.com/fM3NHuu.png)
 
 **Conclusion:**
 >VR is still a great terrain for R&D and experimentation, and what is accepted today as good practice will surely become tomorrow's mistake. so don't take these for granted and feel free to experiment, tweak and playtest(A LOt) as you want.
