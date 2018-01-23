@@ -51,7 +51,7 @@ with a variable in time fading or immediate. by either pointing to static telepo
 
 Microsoft's implemented this just right in their cliffhouse by letting the user calibrate it's facing rotation while teleporting. My modest implementation looks like:
 
-![altText](https://i.imgur.com/3SthBls.mp4)
+<blockquote class="imgur-embed-pub" lang="en" data-id="3SthBls"><a href="//imgur.com/3SthBls">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ```Java
 //......SOME CODE.......
