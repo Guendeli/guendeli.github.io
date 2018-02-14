@@ -52,8 +52,8 @@ private void PullString(){
 ```
 
 ## *Bonus Points:*
-* Only relying on the grip button (OVRInput.Button.PrimaryHandTrigger) to interact made it natural as that's how we grab things in real life.
-* Adding a Trigger collider behind the Main Camera that spawns arrow made it also feel right, most archers in the media wear their quiver on their back. tested on mom and dad, they didn't need any tutorial to understand that.
+* Only relying on the grip button (OVRInput.Button.PrimaryHandTrigger) to interact made it natural since that's how we grab things in real life.
+* Adding a Trigger collider behind the Main Camera that spawns arrows made it also feel right, most archers in the media wear their quiver on their back. tested on mom and dad, they didn't need any tutorial to understand that feature.
 
 
 
