@@ -8,7 +8,7 @@ image: https://i.imgur.com/sfV8KUW.jpg
 I'll be starting a series on design patterns applied to real-life gameplay programming using Unity3D along with sample scene explaining one mechanic, by following Matt, our imaginary gameplay programmer who just joined the studio.
 
 ## CTRL+Z:
-Matt just came to his office this morning, motivated, he is working on Paladins Tactics, a turn based RPG for mobiles. When opening Slack, he discovers his product manager just assigned him this story
+Matt came to his office this morning, motivated, he is working on Paladins Tactics, a turn based RPG for mobiles. When opening Slack, he discovers his product manager just assigned him this story
 
 > As a player, i should be able to undo my actions and change them
 > before ending the turn.
@@ -22,7 +22,7 @@ Well, not that much, enters the Command pattern, quoting wikipedia:
 
 > In object-oriented programming, the **command pattern** is a "Behavioral pattern" pattern in which an object is used to encapsulate all information needed to perform an action or trigger an event at a later time.
 
-It may sounds a lot like a "callback", a simple slugline for it would be "an object-oriented replacement for callbacks"
+'at a later time' may make it sound like a callback, a simple slugline for it would be "an object-oriented replacement for callbacks"
 
 In every video game there is some functionnality that reads raw user input from the player and translate it into something of value inside the game world, and Matt's implementation was dead simple but working during conception:
 ```C#
@@ -36,7 +36,7 @@ In every video game there is some functionnality that reads raw user input from 
         //....other inputs tied here
     }
 ```
-While this was working just fine during the early stages, it poses the problem of not letting the user configure his/her own input scheme, it forces us to write duplacate code for other moving units not controlled by the player and finally, makes implementing our undo feature a pain in the arse, enter our pattern.
+While this was working just fine during the early stages, it poses the problem of not letting the user configure his/her own input scheme, it forces us to write duplicate code for other moving units not controlled by the player and finally, makes implementing our undo feature a pain in the arse, enter our pattern.
 
 ## Command:
 we start by defining a base class that represents any triggerable game action:
