@@ -14,6 +14,7 @@ Matt just came to his office this morning, motivated, he is working on Paladins 
 > before ending the turn.
 
 With an explanation image that shows the wanted result:
+
 ![enter image description here](https://media.giphy.com/media/Rd6sv6StGGedfnPy2b/giphy.gif)
 
 Our developer scratches his head, all of the gameplay mechanics like movements and attacks were deeply hardcoded in the Player related components that decoupling them would be insanely hard. 
@@ -37,7 +38,7 @@ In every video game there is some functionnality that reads raw user input from 
 ```
 While this was working just fine during the early stages, it poses the problem of not letting the user configure his/her own input scheme, it forces us to write duplacate code for other moving units not controlled by the player and finally, makes implementing our undo feature a pain in the arse, enter our pattern.
 
-# Command:
+## Command:
 we start by defining a base class that represents any triggerable game action:
 ```C#
 /// <summary>
@@ -123,6 +124,7 @@ a fully downloadable sample can be foud [here](https://github.com/Guendeli/unity
 
 ### reference:
 [Robert Nystrom's Game Programming Patterns](http://gameprogrammingpatterns.com) book, language and framework agnostic.
+
 Credits to Free visual assets used in this post:
 [RPG Hero HP](https://assetstore.unity.com/packages/3d/characters/humanoids/rpg-hero-hp-121480), [Medieval Town Exteriors](https://assetstore.unity.com/packages/3d/environments/fantasy/medieval-town-exteriors-27026), [Simple UI](https://assetstore.unity.com/packages/2d/gui/icons/simple-ui-103969)
 
