@@ -2,7 +2,7 @@
 title: Views on Unity C#
 date: 2018-01-08 23:31:01 Z
 layout: post
-image: https://media.licdn.com/media/AAEAAQAAAAAAAArVAAAAJDY2MWRmZTc2LTM3NmUtNDcwOC1hM2FjLTM3YmQ2MWJkOTk4Zg.jpg
+image: https://media.licdn.com/media/gcrc/dms/image/C4E12AQF42VbkWmEIAw/article-cover_image-shrink_720_1280/0?e=2131315200&v=beta&t=PBbvLuFwyB7ZxvTZii7Fx1EEervpBdZhin6qBt2aTwo
 ---
 
 Style and naming conventions might vary between every team / company / individual out there and Unity3D's API use a strange naming convention. So i had to modify mine at most gigs i took to make the code match theirs.

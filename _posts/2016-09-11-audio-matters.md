@@ -6,7 +6,7 @@ tags:
 - gamedev
 description: 
 layout: post
-image: https://media.licdn.com/media/AAEAAQAAAAAAAAhNAAAAJDBlMjY4NTFiLTY4NGEtNGQ4Mi1hYjgwLWEyYTI2ZmZhNTQ4Mw.png
+image: https://media.licdn.com/media/gcrc/dms/image/C4E12AQEHRsgRSlYq_A/article-cover_image-shrink_600_2000/0?e=2131315200&v=beta&t=4t81HQZJtzWGGxMZLCruKY6pCQhxUlxMffDqBrROLxc
 ---
 
 There is a plentiful of situations where you game development workflow can go wrong, and not run smoothly on your target devices. maybe there are too many draw calls and materials, maybe your polycount is pretty high for the devices, or your game logic turns the CPU to an eggpan. in this article we'll focus on Audio/Music, a field most solo/indie developers put in their last stages, and why audio matters as much as graphics.
